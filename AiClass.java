@@ -28,7 +28,7 @@ public class AiClass {
         boolean ColorFound = false;
         for(int i=0;i<inHand.size();i++)
         {
-               if(inHand.get(i).color.equals(OnGround.color) && inHand.get(i) instanceof Special && !OnGround.color.equals("Black"))
+               if(inHand.get(i).color.equals(OnGround.color) && inHand.get(i) instanceof Special)
                {
                    ColorFound=true;
                    break;
@@ -129,7 +129,6 @@ public class AiClass {
         return ToBePlayed;
     }
     public Card NormalToBePlayed(ArrayList<Card> inHand, Card OnGround)
-
     {
          boolean found=false;
          Card MaxTemp=null;
